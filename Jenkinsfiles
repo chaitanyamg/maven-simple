@@ -1,0 +1,10 @@
+node{
+    stage('git') {
+    // some block
+    git 'https://github.com/chaitanyamg/maven-simple.git'
+}
+stage('maven') {
+    // some block
+    sh label: '', script: 'mvn install'
+}
+}
